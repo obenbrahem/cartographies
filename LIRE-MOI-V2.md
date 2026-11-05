@@ -15,6 +15,6 @@ Dans l’accueil, cliquez sur **Identifier les points de contrôle**. La V2 dist
 
 Les 102 processus sont conservés. Pour chaque point, consultez le processus et les risques cités, puis qualifiez si nécessaire le responsable, le risque précisément rattaché et les preuves attendues. Les qualifications sont locales au navigateur ; exportez-les en JSON pour les conserver ou les transférer. Le CSV porte sur les points filtrés.
 
-La cartographie **Outils ACHEEL** reste indiquée « À venir ». Les données sont internes : conserver le contrôle d’accès du dépôt et utiliser un hébergement privé pour un déploiement.
+La version finale fournie de la cartographie **Outils ACHEEL** est intégrée : 46 outils, 36 flux (dont 6 marqués à confirmer et 5 autres avec des détails à préciser), 52 sous-rubriques Omega, 15 personnes citées et 7 points d’attention. Les liens avec les processus reposent sur des citations sources et restent à confirmer. Les données sont internes : conserver le contrôle d’accès du dépôt et utiliser un hébergement privé pour un déploiement.
 
 Les autres fichiers de développement et la V1 restent conservés dans l’environnement de travail. Aucun déploiement public n’est effectué par cette livraison.
