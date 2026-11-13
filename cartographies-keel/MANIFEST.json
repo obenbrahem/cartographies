@@ -1,7 +1,7 @@
 {
   "records": 1140,
   "relations": 1251,
-  "dataSha256": "ab02c6baa27032ef94033567438e8e2f6e0d9b24c7571e9053bca79c2251e0d6",
+  "dataSha256": "4d836e1160051afa53d8170cc7dcc7c73888f0bcb2cb04818f618ca82c9d603a",
   "sources": {
     "fonctionnement": {
       "name": "fonctionnement.html",
@@ -23,5 +23,6 @@
       "name": "Synthese_Traites.xlsx",
       "sha256": "f490c92b8f2a1154d5d5d125021910fba17368c61419e039b0ad87c0e63ec8f5"
     }
-  }
+  },
+  "edition": "1.1"
 }

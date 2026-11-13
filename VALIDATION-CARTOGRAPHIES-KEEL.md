@@ -15,7 +15,7 @@ La livraison reconstruit les cinq cartographies dans une application native au l
 
 Vérifications dans Chromium avec Playwright, contexte navigateur hors ligne :
 
-- 24 vues des cinq univers ouvertes sans erreur JavaScript.
+- 26 vues des cinq univers ouvertes sans erreur JavaScript.
 - Restitution des trois rubriques Fiche, Liens et Source pour les 1 140 objets : 3 420 rendus contrôlés.
 - Ouverture réelle dans le panneau et navigation entre les trois rubriques pour les 22 types d’objets.
 - Navigation par chaîne de valeur, dépliage des fonctions, sélection des processus, filtres de texte, entité, type et statut, réinitialisation et états sans résultat.
@@ -43,3 +43,11 @@ Les cinq univers, l’accueil et les sources ont été contrôlés à 390 × 844
 ## Portée des vérifications
 
 Les contrôles confirment la migration documentaire et les parcours techniques décrits ; ils ne certifient pas les informations métier ni le statut actuel des conventions ou traités. Les tests chargent le HTML complet depuis une adresse locale interceptée en mode hors ligne : la politique du navigateur cloud bloque `file://`. Aucune politique de sécurité n’a été désactivée. Le code source de la livraison contient les tests de navigation réexécutables.
+
+## Schémas de réassurance ajoutés
+
+Les 28 lignes de synthèse ont été visualisées dans chacun des deux circuits, soit 56 schémas. Les cinq blocs BtoBtoC et les quatre blocs sans partenaire sont générés avec les libellés du référentiel. La sélection d’une ligne, l’ouverture des fiches sans quitter le schéma, les liens directs, le choix manuel et le rétablissement de la correspondance source ont été contrôlés.
+
+Les références des 12 rapprochements documentaires et des 7 ensembles de produits de référence existent dans le référentiel. Les 1 140 objets et les 1 251 relations sources restent inchangés. Les programmes sans correspondance restent sans partenaire par défaut ; les choix manuels sont explicitement qualifiés. Les rôles Auvray/FMA et la divergence Mutualia/Harmonie ont fait l’objet d’assertions dédiées.
+
+Les deux exports SVG ont été téléchargés et validés comme XML SVG ; ils contiennent les polices et leurs licences, les parts, les périodes et les réserves de lecture. Les vues ont été contrôlées à 390 px, y compris l’ouverture et la fermeture des fiches et la libération de la navigation. Aucune erreur JavaScript ni requête externe observée. Le manifeste du jeu de données a été actualisé ; les documents originaux restent identiques.

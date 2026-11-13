@@ -22,6 +22,7 @@ Cette commande utilise uniquement la bibliothèque standard Python. Elle produit
 | `core.js` | Référentiel commun, navigation, recherche documentaire et états de vue. |
 | `views.js` | Tableau de bord, exploration métier, matrices, catalogues, tableaux, comparateurs et glossaires. |
 | `graph.js` | Cartes SVG natives, sélection, zoom, déplacement, clavier et adaptation mobile. |
+| `reinsurance.js` | Schémas BtoBtoC et sans partenaire, correspondances documentaires, choix de lecture et export SVG. |
 | `details.js` | Fiches, liens, données sources et rendu sûr des rubriques documentaires. |
 | `events.js` | Interactions, exports, favoris, restauration et accessibilité des panneaux. |
 | `app.css` | Interface et adaptations aux écrans. |
@@ -47,3 +48,16 @@ CHROMIUM_PATH=/usr/bin/chromium node cartographies-keel/tests/audit.cjs
 ```
 
 Ces dépendances servent uniquement au développement et aux tests. Les tests chargent le HTML autonome depuis une adresse interceptée, avec le contexte navigateur hors ligne. La politique du navigateur cloud bloque la navigation directe `file://` ; aucune politique n’est désactivée pour les tests.
+
+## Schémas de réassurance — édition 1.1
+
+Deux vues permettent de représenter les acteurs d’une ligne de synthèse :
+
+- BtoBtoC : Réassureur → Acheel SA → Acheel France → Partenaire → Produit/programme.
+- Sans partenaire : Réassureur → Acheel SA → Acheel France → Produit/programme.
+
+Les 28 lignes sont sélectionnables dans chaque vue. Les traits décrivent les modèles de lecture demandés ; ils ne représentent pas des paiements et ne déterminent pas le canal réel d’un traité. Les blocs ouvrent les fiches en gardant le schéma à l’écran. Les lignes et réassureurs ont aussi des raccourcis vers les deux schémas. L’export SVG conserve la part, la période, la référence et les réserves de lecture.
+
+`data.json.reinsuranceSchemes` contient 12 rapprochements documentaires explicités et leurs références ; ils sont distincts des 1 251 relations sources. Les rapprochements ne certifient pas l’identité d’un contrat. Les lignes non rapprochées restent sans partenaire par défaut ; un choix manuel de partenaire est marqué comme choix de lecture à confirmer et n’est pas enregistré dans le référentiel. La nouvelle génération Genius/Senior n’est pas attribuée automatiquement à SpVie. Les rôles Auvray/FMA restent distincts ; la divergence Groupe Mutualia / Harmonie Mutuelle est signalée.
+
+Test dédié : `npm --prefix cartographies-keel run test:reassurance`. Il couvre les 56 combinaisons de ligne/circuit, les liens de fiche, les choix de partenaire, les exports SVG et le mobile.

@@ -10,6 +10,8 @@ Les cinq cartographies sont reconstruites dans une application commune au design
 - [Nouvelle carte Produits](dist/apercu-carte-produits.png)
 - [Fiche latérale et source produit](dist/apercu-fiche-cartographie.png)
 - [Nouvelle cartographie Réassureurs](dist/apercu-reassureurs.png)
+- [Schéma Réassurance BtoBtoC](dist/apercu-schema-reassurance-btobtoc.png)
+- [Schéma Réassurance sans partenaire](dist/apercu-schema-reassurance-sans-partenaire.png)
 
 ## Explorer les cinq univers
 
@@ -27,6 +29,12 @@ Le module de qualification des points de contrôle n’est pas intégré. Les me
 
 Le [code source de l’outil](cartographies-keel/README.md) permet de reconstruire le HTML avec Python standard. Les sources comprennent 1 140 objets et 1 251 relations documentaires, sans iframe ni dépendance réseau à l’exécution.
 
-Le [rapport de validation](VALIDATION-CARTOGRAPHIES-KEEL.md) détaille les contrôles réalisés : 24 vues, 3 420 rendus de fiches/liens/sources, navigation, zoom, matrices, filtres, recherche, favoris, exports et mobile. Les collections principales ont été comparées aux données d’origine ; les 28 conditions de réassurance et le classeur exporté ont été vérifiés. Aucune erreur JavaScript ni requête externe observée dans les parcours contrôlés hors ligne.
+Le [rapport de validation](VALIDATION-CARTOGRAPHIES-KEEL.md) détaille les contrôles réalisés : 26 vues, 3 420 rendus de fiches/liens/sources, navigation, zoom, matrices, filtres, recherche, favoris, exports et mobile. Les collections principales ont été comparées aux données d’origine ; les 28 conditions de réassurance et le classeur exporté ont été vérifiés. Aucune erreur JavaScript ni requête externe observée dans les parcours contrôlés hors ligne.
 
 Cette livraison est ajoutée à la branche dédiée du dépôt public avec l’autorisation de son propriétaire. Aucun site n’est déployé et aucun fichier du dépôt Keel n’est modifié.
+
+## Deux schémas de réassurance
+
+Dans **Réassureurs**, les onglets **BtoBtoC** et **Sans partenaire** relient respectivement Réassureur → Acheel SA → Acheel France → Partenaire → Produit et Réassureur → Acheel SA → Acheel France → Produit. Les 28 lignes sont sélectionnables et les blocs ouvrent leur fiche sans quitter le schéma. L’export SVG permet de conserver le schéma de la ligne affichée.
+
+Les partenaires sont proposés uniquement à partir de correspondances documentaires explicitées. Les liens à confirmer restent signalés ; les lignes sans correspondance ne reçoivent pas de partenaire par déduction. Un choix de partenaire permet d’illustrer le circuit sans modifier les données sources. Les deux vues ne certifient pas le canal réel des traités.

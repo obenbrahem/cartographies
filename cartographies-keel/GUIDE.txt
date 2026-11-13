@@ -10,7 +10,9 @@ Les cinq cartographies ont été reconstruites dans une interface commune inspir
 - Produits : cartes d’acteurs zoomables, catalogue, parcours, comparateur et garanties Santé.
 - Partenaires : matrice par famille, offres, conventions et flux.
 - Outils : carte du SI, zoom et déplacement, catalogue, flux, rubriques Omega et référents.
-- Réassureurs : matrice par périmètre, réassureurs et conditions de chaque ligne de synthèse.
+- Réassureurs : matrice par périmètre, réassureurs et conditions de chaque ligne de synthèse, plus deux schémas de lecture : BtoBtoC et Sans partenaire.
+
+Dans Réassureurs, les onglets BtoBtoC et Sans partenaire affichent respectivement Réassureur → Acheel SA → Acheel France → Partenaire → Produit, et Réassureur → Acheel SA → Acheel France → Produit. Choisir une ligne dans la liste pour actualiser le schéma. Les blocs ouvrent les fiches en conservant le schéma. Le partenaire peut être choisi lorsque le rattachement manque ; le choix reste signalé comme à confirmer et ne modifie pas les sources. Chaque schéma est exportable en SVG. Les traits illustrent une lecture des relations, sans représenter des paiements ni classer automatiquement les traités par canal.
 
 Cliquer un objet pour ouvrir sa fiche latérale. Les onglets Fiche, Liens et Source donnent accès aux détails et à la référence documentaire. La recherche (Ctrl K ou Cmd K) parcourt tous les univers. Les filtres s’appliquent à la vue ouverte. Les étoiles créent des favoris locaux au navigateur ; les sauvegarder depuis Favoris pour les transférer.
 
