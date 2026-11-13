@@ -1,35 +1,32 @@
-# ACHEEL — Cartographies · Interface et navigation
+# KEEL — Nouvel outil des cartographies ACHEEL
 
-[**Télécharger le ZIP**](dist/acheel-cartographies.zip), extraire l’archive puis ouvrir `acheel-cartographies.html` dans Chrome ou Edge. Le [HTML seul](dist/acheel-cartographies.html) est aussi disponible. [Aperçu de l’accueil](dist/apercu-cartographies.png).
+Les cinq cartographies sont reconstruites dans une application commune au design de Keel : navigation bleu marine, typographies Montserrat et JetBrains Mono, tableaux, filtres, cartes interactives et fiches latérales. Les anciennes interfaces ne sont plus les écrans de l’outil.
 
-## Cinq cartographies, une navigation commune
+**[Télécharger le ZIP](dist/acheel-cartographies.zip)**, l’extraire puis ouvrir **acheel-cartographies.html** dans Chrome ou Edge. Aucune installation ni connexion nécessaire. Le [HTML seul](dist/acheel-cartographies.html) est également disponible.
 
-- Fonctionnement : 102 processus répartis dans 14 fonctions.
-- Produits : 7 produits documentés.
-- Partenaires : 36 libellés de partenaires présents dans les données intégrées, y compris les éléments complémentaires à Deemeter.
-- Outils : 46 outils avec leurs flux et circuits.
-- Réassureurs : 28 lignes de synthèse, 12 libellés de réassureurs ou de panel et 8 périmètres.
+## Aperçus
 
-L’accueil, le menu latéral, les raccourcis, la recherche globale et la recherche par cartographie permettent d’ouvrir directement les fiches. Le mode agrandi donne davantage de place aux cartes ; Échap rétablit le menu. Sur mobile, la navigation est accessible par le bouton ☰. Le téléchargement HTML enregistre une copie autonome complète.
+- [Tableau de bord](dist/apercu-cartographies.png)
+- [Nouvelle carte Produits](dist/apercu-carte-produits.png)
+- [Fiche latérale et source produit](dist/apercu-fiche-cartographie.png)
+- [Nouvelle cartographie Réassureurs](dist/apercu-reassureurs.png)
 
-L’habillage reprend le logo, le bleu #1E96FC, les titres Outfit et les textes Nunito observables sur le [site ACHEEL](https://v2.acheel.com/). Les polices et le logo sont intégrés au fichier pour le fonctionnement hors ligne. Les cinq cartographies partagent cet habillage. Il ne s’agit pas d’une certification de conformité à un manuel de marque interne non fourni.
+## Explorer les cinq univers
 
-## Corrections de fonctionnement
+- **Fonctionnement** : entrer par une chaîne de valeur, déplier les fonctions, ouvrir un processus. Les 102 processus et leurs rubriques restent consultables.
+- **Produits** : cartes d’acteurs par produit, zoom et déplacement, catalogue, 10 parcours détaillés, comparateur et 19 formules Santé.
+- **Partenaires** : matrice interactive par famille, 36 partenaires, 105 offres, conventions et flux documentés.
+- **Outils** : carte native du SI et des flux, zoom, déplacement, sélection, catalogue de 46 outils, rubriques Omega et référents.
+- **Réassureurs** : matrice par périmètre et accès aux 28 lignes de synthèse, avec parts, périodes et commissions.
 
-Les liens internes restent dans la cartographie au lieu de charger une seconde copie du portail dans son cadre. La navigation Fonctionnement utilise une URL locale explicite, compatible avec l’intégration autonome. Les boutons ouvrant une fiche ou un acteur ne réinitialisent plus la vue. Les anciennes fiches produits externes sont remplacées par le dépliage de la fiche intégrée. Les vues participent à l’historique précédent/suivant du navigateur.
+La recherche commune s’ouvre avec Ctrl K ou ⌘ K. Les filtres affinent la vue courante. Chaque objet ouvre une fiche avec trois rubriques : Fiche, Liens, Source. Les favoris créent des repères locaux sauvegardables. Les exports CSV respectent les filtres ; les fiches sont exportables en JSON. Les cartes peuvent être agrandies, déplacées et zoomées. Sur mobile, le menu est accessible par ☰ et les cartes s’ouvrent à un zoom lisible.
 
-Cette version n’intègre pas le module de qualification des points de contrôle. Les mentions métier présentes dans les cartographies sources sont conservées.
+Le module de qualification des points de contrôle n’est pas intégré. Les mentions métier des documents d’origine sont conservées. Les sources et références sont accessibles depuis les fiches ; les documents sources sont téléchargeables dans la bibliothèque. Les relations à confirmer restent signalées, les parts de réassurance ne sont pas agrégées et le panel placé par Guy Carpenter n’est pas réparti arbitrairement entre ses membres.
 
-## Sources et réassurance
+## Code et vérifications
 
-Fonctionnement, produits et partenaires : cartographies originales intégrées à la livraison V2 du dépôt. Outils : version finale de la cartographie des outils ACHEEL. Réassureurs : `Synthese_Traites.xlsx`, feuille Synthèse, cellules A2:F29. Les données du classeur sont accessibles dans les fiches avec référence à la ligne d’origine. La carte propose filtres, tableau, export CSV filtré et téléchargement du classeur exact.
+Le [code source de l’outil](cartographies-keel/README.md) permet de reconstruire le HTML avec Python standard. Les sources comprennent 1 140 objets et 1 251 relations documentaires, sans iframe ni dépendance réseau à l’exécution.
 
-Le panel placé par Guy Carpenter reste groupé. Aucune quote-part par membre n’est inventée. Les périodes sont reproduites sans présumer du statut actuel des traités ; les quotes-parts de lignes différentes ne sont pas additionnées. Les codes P1 à P8 ne sont pas rapprochés arbitrairement de produits. Les conditions de commission sont conservées telles que fournies.
+Le [rapport de validation](VALIDATION-CARTOGRAPHIES-KEEL.md) détaille les contrôles réalisés : 24 vues, 3 420 rendus de fiches/liens/sources, navigation, zoom, matrices, filtres, recherche, favoris, exports et mobile. Les collections principales ont été comparées aux données d’origine ; les 28 conditions de réassurance et le classeur exporté ont été vérifiés. Aucune erreur JavaScript ni requête externe observée dans les parcours contrôlés hors ligne.
 
-## Vérifications
-
-Contrôles navigateur sous Chromium : onglets des cartographies ; destination des 233 entrées détaillées de la recherche (14 fonctions, 102 processus, 7 produits, 36 partenaires, 46 outils, 28 lignes de réassurance) ; fiches acteur, étape, produit et aide ; historique précédent/suivant ; recherche globale et locale ; mode agrandi ; téléchargement et réouverture de la copie HTML. Les 28 périodes, parts et commissions de réassurance ont été comparées aux données extraites du classeur. Le CSV filtré et l’identité binaire du classeur téléchargé ont été vérifiés. Les cinq univers et l’accueil ont été vérifiés à 390 px. Aucune requête externe ni erreur JavaScript observée pendant les parcours testés hors ligne.
-
-La navigation `file://` est bloquée par la politique du navigateur cloud : le HTML autonome a été testé depuis une adresse locale interceptée, avec réseau hors ligne. L’ouverture directe du fichier reste soumise aux règles du poste utilisateur. Les vérifications techniques ne valident pas les informations métier.
-
-Les fichiers sont ajoutés au dépôt public avec l’autorisation explicite de son propriétaire. Aucun site n’est déployé.
+Cette livraison est ajoutée à la branche dédiée du dépôt public avec l’autorisation de son propriétaire. Aucun site n’est déployé et aucun fichier du dépôt Keel n’est modifié.

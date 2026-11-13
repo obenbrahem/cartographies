@@ -1,0 +1,22 @@
+KEEL — CARTOGRAPHIES ACHEEL
+
+1. Extraire cette archive.
+2. Ouvrir acheel-cartographies.html dans Chrome ou Edge.
+
+Aucune installation ni connexion n’est nécessaire.
+
+Les cinq cartographies ont été reconstruites dans une interface commune inspirée de Keel :
+- Fonctionnement : panorama par chaîne de valeur, fonctions et processus dépliables.
+- Produits : cartes d’acteurs zoomables, catalogue, parcours, comparateur et garanties Santé.
+- Partenaires : matrice par famille, offres, conventions et flux.
+- Outils : carte du SI, zoom et déplacement, catalogue, flux, rubriques Omega et référents.
+- Réassureurs : matrice par périmètre, réassureurs et conditions de chaque ligne de synthèse.
+
+Cliquer un objet pour ouvrir sa fiche latérale. Les onglets Fiche, Liens et Source donnent accès aux détails et à la référence documentaire. La recherche (Ctrl K ou Cmd K) parcourt tous les univers. Les filtres s’appliquent à la vue ouverte. Les étoiles créent des favoris locaux au navigateur ; les sauvegarder depuis Favoris pour les transférer.
+
+Dans une carte Produits ou Outils, faire glisser le fond pour naviguer, utiliser + et - pour zoomer, Ajuster pour voir l’ensemble, et Agrandir pour libérer de la place. Échap ferme une fiche ou quitte le mode agrandi. Sur mobile, le menu est accessible avec ☰.
+
+Exporter crée un CSV des résultats filtrés ; les fiches peuvent être exportées en JSON. Le classeur de réassurance original et les autres documents sources sont téléchargeables depuis Sources & glossaires ou l’onglet Source des fiches.
+
+Le module de qualification des points de contrôle n’est pas intégré. Les mentions métier des documents d’origine sont conservées. Les liens à confirmer restent signalés. Les pourcentages de réassurance ne sont pas additionnés entre lignes, et la quote-part du panel Guy Carpenter n’est pas répartie entre ses membres. Les dates et statuts cités restent ceux des sources.
+

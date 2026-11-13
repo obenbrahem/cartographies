@@ -1,0 +1,27 @@
+{
+  "records": 1140,
+  "relations": 1251,
+  "dataSha256": "ab02c6baa27032ef94033567438e8e2f6e0d9b24c7571e9053bca79c2251e0d6",
+  "sources": {
+    "fonctionnement": {
+      "name": "fonctionnement.html",
+      "sha256": "7cc114f10a94751975a5569c48fced88d6c27174bb50c0574ba5c0386d52e6d7"
+    },
+    "produits": {
+      "name": "produits.html",
+      "sha256": "4092ecc927e4348b8e07bd3528377c3ff6f953e78c7792628c32997cec5b7355"
+    },
+    "partenaires": {
+      "name": "partenaires.html",
+      "sha256": "45d45e49f127bb4c53599feb6f5ab685a53140966982407bf0a85f3af1aeb503"
+    },
+    "outils": {
+      "name": "outils.html",
+      "sha256": "73d2e9adbfdeba9b3e6efed2060a8c84e8d422e72efccfc34ab365c8018ccb55"
+    },
+    "traites": {
+      "name": "Synthese_Traites.xlsx",
+      "sha256": "f490c92b8f2a1154d5d5d125021910fba17368c61419e039b0ad87c0e63ec8f5"
+    }
+  }
+}

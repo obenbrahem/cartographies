@@ -1,0 +1,13 @@
+{
+  "name": "keel-cartographies",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/audit.cjs",
+    "test:mobile": "node tests/mobile-history.cjs",
+    "test:extras": "node tests/extras.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
